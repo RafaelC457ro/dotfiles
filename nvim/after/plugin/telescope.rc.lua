@@ -42,6 +42,17 @@ telescope.setup {
         ["q"] = actions.close
       },
     },
+    vimgrep_arguments = { 
+      'rg', 
+      '--hidden', 
+      '--color=never', 
+      '--no-heading', 
+      '--with-filename', 
+      '--line-number', 
+      '--column', 
+      '--smart-case',
+      '--uu'
+    }
   },
   extensions = {
     file_browser = {
