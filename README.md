@@ -1,4 +1,4 @@
 # My personal dotfiles
 
-This md working in progress personal dot files
+This is my working in progress personal dot files
 
