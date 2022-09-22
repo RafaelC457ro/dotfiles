@@ -24,6 +24,9 @@ nvim_lsp.tsserver.setup {
 -- flow
 nvim_lsp.flow.setup {}
 
+-- tailwind
+nvim_lsp.tailwindcss.setup {}
+
 --css
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities.textDocument.completion.completionItem.snippetSupport = true

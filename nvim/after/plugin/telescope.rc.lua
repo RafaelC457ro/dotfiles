@@ -42,17 +42,6 @@ telescope.setup {
         ["q"] = actions.close
       },
     },
-    vimgrep_arguments = { 
-      'rg', 
-      '--hidden', 
-      '--color=never', 
-      '--no-heading', 
-      '--with-filename', 
-      '--line-number', 
-      '--column', 
-      '--smart-case',
-      '--uu'
-    }
   },
   extensions = {
     file_browser = {
@@ -75,7 +64,16 @@ telescope.setup {
       },
     },
   },
+  fzf = {
+    fuzzy = true,                    -- false will only do exact matching
+    override_generic_sorter = true,  -- override the generic sorter
+    override_file_sorter = true,     -- override the file sorter
+    case_mode = "smart_case",        -- or "ignore_case" or "respect_case"
+    -- the default case_mode is "smart_case"
+  }
 }
+
+telescope.load_extension('fzf')
 
 telescope.load_extension("file_browser")
 
@@ -83,7 +81,7 @@ vim.keymap.set("n", "sf", function()
   telescope.extensions.file_browser.file_browser({
     path = "%:p:h",
     cwd = telescope_buffer_dir(),
-    respect_gitignore = false,
+    respect_gitignore = true,
     hidden = true,
     grouped = true,
     previewer = false,

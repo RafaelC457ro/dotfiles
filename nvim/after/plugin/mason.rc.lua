@@ -8,6 +8,6 @@ if (not status2) then return end
 mason.setup({})
 
 lspconfig.setup {
-  ensure_installed = { "sumneko_lua", "tailwindcss", "flow", "sass" },
+  ensure_installed = { "sumneko_lua", "tailwindcss" },
 }
 
