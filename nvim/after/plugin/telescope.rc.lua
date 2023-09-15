@@ -51,7 +51,7 @@ telescope.setup {
       mappings = {
         -- your custom insert mode mappings
         ["i"] = {
-          ["<C-w>"] = function() vim.cmd("normal vbd") end,
+          ["<C-w>"] = function() vim.cmd('normal vbd') end,
         },
         ["n"] = {
           -- your custom normal mode mappings
@@ -81,7 +81,7 @@ vim.keymap.set("n", "sf", function()
   telescope.extensions.file_browser.file_browser({
     path = "%:p:h",
     cwd = telescope_buffer_dir(),
-    respect_gitignore = true,
+    respect_gitignore = false,
     hidden = true,
     grouped = true,
     previewer = false,

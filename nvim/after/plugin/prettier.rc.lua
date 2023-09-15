@@ -15,6 +15,7 @@ prettier.setup({
     "typescript",
     "typescriptreact",
     "yaml",
+    "solidity"
   },
 })
 

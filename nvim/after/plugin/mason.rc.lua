@@ -1,4 +1,3 @@
-
 -- mason
 local status, mason = pcall(require, "mason")
 if (not status) then return end
@@ -8,6 +7,5 @@ if (not status2) then return end
 mason.setup({})
 
 lspconfig.setup {
-  ensure_installed = { "sumneko_lua", "tailwindcss" },
+  automatic_installation = true
 }
-
