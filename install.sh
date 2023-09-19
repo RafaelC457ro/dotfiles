@@ -1,4 +1,4 @@
 #!/bin/bash
 
-cp nvim "$HOME/.config/nvim"
-cp .tmux.config "$HOME/.tmux.conf" 
+cp -rf nvim "$HOME/.config/nvim"
+cp -f .tmux.config "$HOME/.tmux.conf" 

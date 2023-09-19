@@ -120,6 +120,9 @@ nvim_lsp.astro.setup {
   capabilities = capabilities
 }
 
+
+capabilities.offsetEncoding = { "utf-16" }
+
 nvim_lsp.clangd.setup {
   capabilities = capabilities,
 }
