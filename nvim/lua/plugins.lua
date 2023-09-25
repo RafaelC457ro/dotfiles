@@ -59,4 +59,8 @@ packer.startup(function(use)
   use { 'mfussenegger/nvim-dap', requires = 'nvim-lua/plenary.nvim' }
   use { 'github/copilot.vim' }
   use 'Civitasv/cmake-tools.nvim'
+  use 'theHamsta/nvim-dap-virtual-text'
+  use {
+    'rmagatti/auto-session',
+  }
 end)

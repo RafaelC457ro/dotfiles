@@ -21,7 +21,7 @@ vim.keymap.set('n', ';f',
 vim.keymap.set('n', ';r', function()
   builtin.live_grep()
 end)
-vim.keymap.set('n', '\\\\', function()
+vim.keymap.set('n', ';b', function()
   builtin.buffers()
 end)
 vim.keymap.set('n', ';t', function()
