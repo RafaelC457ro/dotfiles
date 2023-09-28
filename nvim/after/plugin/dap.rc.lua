@@ -2,9 +2,11 @@ local status, dap = pcall(require, "dap")
 if (not status) then return end
 
 -- "nvim-dap-virtual-text"
-local d_status, dap_virtual_text = pcall(require, "dap-virtual-text")
+local d_status, dap_virtual_text = pcall(require, "nvim-dap-virtual-text")
 if (d_status) then
-  dap_virtual_text.setup()
+  dap_virtual_text.setup {
+    enabled = true,
+  }
 end
 
 -- lldb
@@ -59,8 +61,8 @@ vim.keymap.set('n', '<Leader>ds', function()
   local widgets = require('dap.ui.widgets')
   widgets.centered_float(widgets.scopes)
 end)
-
--- F2 load        require'dap.ext.vscode'.load_launchjs(nil, { cppdbg = {'c', 'cpp'} })
-vim.keymap.set('n', '<F2>', function()
-  require('dap.ext.vscode').load_launchjs(nil, { lldb = { 'c', 'cpp' } })
+-- stop debugging
+vim.keymap.set('n', '<Leader>dc', function()
+  require('dap').disconnect()
+  require('dap').close()
 end)

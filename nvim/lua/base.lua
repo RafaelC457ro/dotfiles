@@ -7,6 +7,8 @@ vim.opt.fileencoding = 'utf-8'
 
 vim.wo.number = true -- show lines numbers
 
+-- allow clipboard copy paste
+vim.opt.clipboard = 'unnamedplus'
 vim.opt.autoindent = true
 vim.opt.ai = true -- Auto indent
 vim.opt.si = true -- Smart indent
@@ -14,7 +16,7 @@ vim.opt.tabstop = 2
 vim.opt.shiftwidth = 2
 vim.opt.smarttab = true
 vim.opt.breakindent = true
-vim.opt.backspace = { 'start', 'eol', 'indent'}
+vim.opt.backspace = { 'start', 'eol', 'indent' }
 vim.opt.wrap = false -- No Wrap lines
 vim.opt.expandtab = true
 
@@ -24,4 +26,3 @@ vim.opt.wildignore:append { '*/node_modules/*' }
 vim.opt.wrap = false -- No Wrap lines
 
 vim.opt.termguicolors = true
-
