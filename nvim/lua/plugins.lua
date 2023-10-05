@@ -47,12 +47,9 @@ packer.startup(function(use)
   use 'lewis6991/gitsigns.nvim'
   use 'williamboman/mason.nvim'
   use 'williamboman/mason-lspconfig.nvim'
-  use 'jose-elias-alvarez/null-ls.nvim' -- find a replacement for this. maybe efmls-configs-nvim
-  use 'MunifTanjim/eslint.nvim'
   use { 'TimUntersberger/neogit', requires = 'nvim-lua/plenary.nvim' }
   use { 'sindrets/diffview.nvim', requires = 'nvim-lua/plenary.nvim' }
   use 'norcalli/nvim-colorizer.lua'
-  use 'MunifTanjim/prettier.nvim'
   use { 'kyazdani42/nvim-tree.lua', requires = { 'kyazdani42/nvim-web-devicons' } }
   use 'simrat39/rust-tools.nvim'
   use { 'mfussenegger/nvim-dap', requires = 'nvim-lua/plenary.nvim' }
