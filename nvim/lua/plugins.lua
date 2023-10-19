@@ -28,7 +28,6 @@ packer.startup(function(use)
   use 'hrsh7th/nvim-cmp'
   use {
     'nvim-treesitter/nvim-treesitter',
-    run = function() require('nvim-treesitter.install').update({ with_sync = true }) end,
   }
   use {
     'nvimdev/lspsaga.nvim',
@@ -50,7 +49,6 @@ packer.startup(function(use)
   use { 'TimUntersberger/neogit', requires = 'nvim-lua/plenary.nvim' }
   use { 'sindrets/diffview.nvim', requires = 'nvim-lua/plenary.nvim' }
   use 'norcalli/nvim-colorizer.lua'
-  use { 'kyazdani42/nvim-tree.lua', requires = { 'kyazdani42/nvim-web-devicons' } }
   use 'simrat39/rust-tools.nvim'
   use { 'mfussenegger/nvim-dap', requires = 'nvim-lua/plenary.nvim' }
   use { 'github/copilot.vim' }
