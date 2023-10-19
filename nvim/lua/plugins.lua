@@ -59,4 +59,5 @@ packer.startup(function(use)
   use {
     'rmagatti/auto-session',
   }
+  use { 'mhartington/formatter.nvim' }
 end)
