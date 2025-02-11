@@ -1,5 +1,5 @@
 local keymap = vim.keymap
-
+i
 -- select all
 keymap.set('n', '<C-a>', 'gg<S-v>G')
 
