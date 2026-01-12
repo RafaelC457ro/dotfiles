@@ -1,31 +1,16 @@
 return {
-	{
-		"nvim-treesitter/nvim-treesitter",
-		opts = {
-			ensure_installed = {
-				"astro",
-				"cmake",
-				"cpp",
-				"css",
-				"gitignore",
-				"go",
-				"graphql",
-				"http",
-				"java",
-				"scss",
-				"sql",
-			},
-		},
-		config = function(_, opts)
-			require("nvim-treesitter.configs").setup(opts)
-
-			-- MDX
-			vim.filetype.add({
-				extension = {
-					mdx = "mdx",
-				},
-			})
-			vim.treesitter.language.register("markdown", "mdx")
-		end,
-	},
+    {
+        "nvim-treesitter/nvim-treesitter",
+        opts = {
+            indent = {enable = true}, ---@type lazyvim.TSFeat
+            highlight = {enable = true}, ---@type lazyvim.TSFeat
+            folds = {enable = true}, ---@type lazyvim.TSFeat
+            ensure_installed = {
+                "bash", "c", "diff", "html", "javascript", "jsdoc", "json",
+                "jsonc", "lua", "luadoc", "luap", "markdown", "markdown_inline",
+                "printf", "python", "query", "regex", "toml", "tsx",
+                "typescript", "vim", "vimdoc", "xml", "yaml"
+            }
+        }
+    }
 }

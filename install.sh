@@ -1,4 +1,3 @@
 #!/bin/bash
 
-cp -rf nvim "$HOME/.config/nvim"
-cp -f .tmux.conf "$HOME/.tmux.conf" 
+cp -rf ./nvim/lua "$HOME/.config/nvim/lua"
