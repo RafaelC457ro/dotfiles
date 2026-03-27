@@ -9,7 +9,24 @@ return {
                 tsserver = {enabled = false},
                 ts_ls = {enabled = false},
                 marksman = {},
+                astro = {},
                 vtsls = {
+                    -- astro specific config
+                    settings = {
+                        vtsls = {
+                            tsserver = {
+                                globalPlugins = {
+                                    {
+                                        name = "@astrojs/ts-plugin",
+                                        location = LazyVim.get_pkg_path(
+                                            "astro-language-server",
+                                            "/node_modules/@astrojs/ts-plugin"),
+                                        enableForWorkspaceTypeScriptVersions = true
+                                    }
+                                }
+                            }
+                        }
+                    },
                     -- explicitly add default filetypes, so that we can extend
                     -- them in related extras
                     filetypes = {

@@ -1,8 +1,17 @@
 # My dotfiles
 
-This is my working in progress personal dot files
+Personal dotfiles, primarily Neovim/LazyVim configuration.
 
-## dependencies
+## Usage
+
+```bash
+./dotfiles.sh install   # dotfiles → ~/.config/nvim  (backs up existing config)
+./dotfiles.sh sync      # ~/.config/nvim → dotfiles
+```
+
+`install` automatically backs up any existing config to `~/.config/nvim-backup-YYYYMMDD-HHMMSS` before overwriting.
+
+## Dependencies
 
 ### Mac
 

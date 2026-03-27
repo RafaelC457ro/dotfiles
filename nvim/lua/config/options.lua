@@ -6,3 +6,5 @@ vim.opt.number = true
 
 -- Disable relative line numbers
 vim.opt.relativenumber = false
+
+vim.filetype.add({extension = {mdx = "mdx"}})
